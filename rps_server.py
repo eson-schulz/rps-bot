@@ -170,7 +170,16 @@ class RPSBot(object):
 					self.send_email(phone, "Please choose a username equal to or less than 10 characters.")
 					return;
 
-			print "Adding:", name, "to the database."
+
+			# Cuts out the + and 1 at the beginning of a phone number
+			if phone[:1] == "+":
+				phone = phone[1:]
+				phone_num_size = len(phone[0:phone.find("@")])
+
+				if phone_num_size > 10:
+					phone = phone[phone_num_size - 10:]
+
+			print "Adding:", name, "to the database with phone number:", phone
 			if(self.database_add_user(name, phone)):
 				self.send_email(phone, "Username successfully added.")
 			else:
