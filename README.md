@@ -27,3 +27,13 @@ To see the list of your current games, text the command:
 To see the condensed list of these commands, text the command:
 
     help
+
+Installation
+-------
+Generally, installation follows these steps:
+
+1. Install [Python 2](https://www.python.org/download/)
+2. Install [MySQLdb](http://sourceforge.net/projects/mysql-python/)
+3. Setup a new database using the provided .sql file
+4. Change the variables at the beginning of rps_server.py
+5. Run rps_server.py
