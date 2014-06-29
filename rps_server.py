@@ -230,10 +230,16 @@ class RPSBot(object):
 			message = ""
 			for game in games:
 				if(game[0] == user):
-					message += "O - {} is still thinking.".format(game[1])
+					line = "O - {} is still thinking.".format(game[1])
 				else:
-					message += "Y - {} is waiting for you.".format(game[0])
-				message += "\n"
+					line = "Y - {} is waiting for you.".format(game[0])
+				if(len((message + line) > 130):
+					self.send_email(sender, message)
+					message = ""
+					message += line
+				else:
+					message += line
+					message += "\n"
 			self.send_email(sender, message)
 			return
 
