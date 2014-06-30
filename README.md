@@ -33,7 +33,16 @@ Installation
 Generally, installation follows these steps:
 
 1. Install [Python 2](https://www.python.org/download/)
-2. Install [MySQLdb](http://sourceforge.net/projects/mysql-python/)
-3. Setup a new database using the provided .sql file
-4. Change the variables at the beginning of rps_server.py
-5. Run rps_server.py
+2. Install [MySQL](http://dev.mysql.com/downloads/)
+3. Install [MySQLdb](http://sourceforge.net/projects/mysql-python/)
+4. Setup a new database using the provided .sql file
+5. Change the variables at the beginning of rps_server.py
+6. Run rps_server.py
+
+### Ubuntu Installation
+
+Install MySQL using:
+
+    sudo apt-get install mysql-server
+    
+Set up a root password, and remember for later.
