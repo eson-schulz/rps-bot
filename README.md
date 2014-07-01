@@ -2,7 +2,7 @@ Rock Paper Scissors Text Server
 =======
 A rps server that runs off of an email address.
 
-Eventually I will have a description of how to set it up.
+After you create a username you can challenge other people on the list of users to a game. It will then send them a notification that they were challenged, which they can then respond to. After both users have sent in their responses, the results will be sent to each user, changing their W/L/T ratio on the leaderboard.
 
 Usage
 -------
