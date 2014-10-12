@@ -38,11 +38,3 @@ Generally, installation follows these steps:
 4. Setup a new database using the provided .sql file
 5. Change the variables at the beginning of rps_server.py
 6. Run rps_server.py
-
-### Ubuntu Installation
-
-Install MySQL using:
-
-    sudo apt-get install mysql-server
-    
-Set up a root password, and remember for later.
